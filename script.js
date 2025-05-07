@@ -42,3 +42,34 @@ console.log(table)
         }
 
         console.log(newTable) // TRUST ME. IM STILL CONFUSED... THE UNIVERSE IS JUST GOOD TO ME (I NEEDED A NESTED FOR LOOP ...)
+
+		//part 4 
+		newTable.pop()
+		console.log(newTable) 
+		newTable.splice(1,0,{id: "48", name: "Barry", occupation: "Runner", age: "25"})
+		console.log(newTable) 
+		newTable.push({ id: "7", name: "Bilbo", occupation: "None", age: "111" })
+		console.log(newTable) 
+		console.log(newTable.length)
+		let avgAge = 0;
+		let sum = 0;
+		for(let i=0; i< newTable.length; i++){
+			sum = sum + parseInt(newTable[i].age) // parseint converst a string into a integer. 
+	
+			
+	}
+	avgAge = sum/newTable.length; 
+	console.log(avgAge)
+
+	// part 5 
+	let newChar = " "	
+	
+	for(let i=0; i < newTable.length; i++){
+		
+		newChar += "ID, Name, Occupation, Age" + newTable[i].id + "," + newTable[i].name + "," + newTable[i].occupation+ "," + newTable[i].age "\/n" 
+	
+	}
+	
+	console.log(newChar)
+	
+	
